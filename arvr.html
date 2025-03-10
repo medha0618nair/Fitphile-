@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitphile - AR/VR Workouts</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: linear-gradient(to right, #ff5722, #4caf50);
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar .logo {
+      font-size: 2rem;
+      color: #ffeb3b;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffeb3b;
+    }
+
+    /* AR/VR Section */
+    .arvr {
+      padding: 60px 20px;
+      text-align: center;
+      background: #121212;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .arvr h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #ffeb3b;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .arvr p {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: #dcdcdc;
+    }
+
+    /* AR/VR Features Section */
+    .arvr-features {
+      width: 80%;
+      max-width: 1200px;
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Feature Cards */
+    .feature-card {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      background: #333;
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .feature-card:hover {
+      background-color: #444;
+      transform: scale(1.05);
+    }
+
+    .feature-card h3 {
+      font-size: 1.6rem;
+      color: #ff5722;
+    }
+
+    .feature-card p {
+      font-size: 1.2rem;
+      color: #dcdcdc;
+      max-width: 60%;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 30px;
+      background: #222;
+      text-align: center;
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #ffeb3b;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: #ff5722;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .arvr h2 {
+        font-size: 2.5rem;
+      }
+
+      .arvr-features {
+        width: 90%;
+      }
+
+      .feature-card {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🔥 Fitphile</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a href="arvr.html">AR/VR</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- AR/VR Section -->
+  <section class="arvr">
+    <h2>🎮 AR/VR Immersive Workouts</h2>
+    <p>Experience the future of fitness with our AR/VR-powered workouts. Get fit while having fun!</p>
+
+    <!-- AR/VR Features Section -->
+    <div class="arvr-features">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <div>
+          <h3>🎯 Target-Based Challenges</h3>
+          <p>Set targets, track progress, and enjoy challenges with real-time AR feedback.</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <div>
+          <h3>🌍 Virtual Fitness Journey</h3>
+          <p>Travel across virtual worlds while completing your fitness goals. A new journey every day!</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <div>
+          <h3>💥 Dynamic Workouts</h3>
+          <p>Interactive workout sessions that change based on your progress and performance.</p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card">
+        <div>
+          <h3>🤖 Robot Trainer</h3>
+          <p>Train with a personalized robot coach who adapts to your skill level and provides real-time feedback.</p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="feature-card">
+        <div>
+          <h3>🎮 Multiplayer Fitness Games</h3>
+          <p>Compete with friends or players worldwide in VR fitness challenges. Earn rewards and rank up!</p>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="feature-card">
+        <div>
+          <h3>🧘‍♀️ Yoga in Virtual Environments</h3>
+          <p>Practice yoga in peaceful virtual environments, such as beaches, forests, or mountaintops.</p>
+        </div>
+      </div>
+
+      <!-- Feature 7 -->
+      <div class="feature-card">
+        <div>
+          <h3>🏃‍♂️ Virtual Running Track</h3>
+          <p>Run through virtual cities, mountains, or futuristic landscapes while tracking your real-time performance.</p>
+        </div>
+      </div>
+
+      <!-- Feature 8 -->
+      <div class="feature-card">
+        <div>
+          <h3>🕹️ Fitness Arcade</h3>
+          <p>Transform your workouts into exciting arcade-style games where you can win fitness points and unlock rewards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Fitphile. All rights reserved.</p>
+    <p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>

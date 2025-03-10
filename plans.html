@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitphile - Workout Plans</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #0c0c0c;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #ff5722, #4caf50);
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Plans Section */
+    .plans {
+      background: #222;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .plans h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #ffeb3b;
+      font-weight: bold;
+    }
+
+    .plan-items {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .plan-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .plan-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .plan-item h3 {
+      font-size: 1.5rem;
+      color: #4caf50;
+      margin-bottom: 15px;
+    }
+
+    .plan-item p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .plan-item .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff9800;
+      margin-bottom: 25px;
+    }
+
+    .plan-item button {
+      background-color: #ff5722;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+
+    .plan-item button:hover {
+      background-color: #ff9800;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      background: #000;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #ffeb3b;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🔥 Fitphile</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a href="arvr.html">AR/VR</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Plans Section -->
+  <section id="plans" class="plans">
+    <h2>📆 Choose Your Perfect Workout Plan</h2>
+    <div class="plan-items">
+      <div class="plan-item">
+        <h3>💪 18-30 Fitness Boost</h3>
+        <p>Strength training, HIIT, and AR challenges for a fitness-packed journey.</p>
+        <div class="price">₹2,199 / month</div>
+        <button onclick="window.location.href='signup.html'">Get Started</button>
+      </div>
+      <div class="plan-item">
+        <h3>🧘 50+ Yoga & Wellness</h3>
+        <p>Gentle yoga, balance training, and flexibility exercises for a mindful workout.</p>
+        <div class="price">₹1,499 / month</div>
+        <button onclick="window.location.href='signup.html'">Get Started</button>
+      </div>
+      <div class="plan-item">
+        <h3>🏋️‍♀️ Premium Fitness Plan</h3>
+        <p>Full access to all workout routines, personalized coaching, and exclusive features.</p>
+        <div class="price">₹3,499 / month</div>
+        <button onclick="window.location.href='signup.html'">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Fitphile. All rights reserved.</p>
+    <p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>

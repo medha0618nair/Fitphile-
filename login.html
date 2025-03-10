@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitphile - Login</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: linear-gradient(to right, #ff5722, #4caf50);
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar .logo {
+      font-size: 2rem;
+      color: #ffeb3b;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Login Section */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #121212, #1a1a1a);
+    }
+
+    .login-box {
+      background: #333;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #ff5722;
+      font-weight: bold;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: #ff5722;
+    }
+
+    .login-btn {
+      background: #ff5722;
+      color: #fff;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #ff9800;
+      transform: scale(1.05);
+    }
+
+    .login-box p {
+      margin-top: 20px;
+      color: #bbb;
+    }
+
+    .login-box p a {
+      text-decoration: none;
+      color: #ff5722;
+      font-weight: bold;
+    }
+
+    .login-box p a:hover {
+      color: #ff9800;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      background: #222;
+      text-align: center;
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #ffeb3b;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .footer a:hover {
+      color: #ff5722;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .login-box {
+        width: 90%;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🔥 Fitphile</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a href="arvr.html">AR/VR</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="#" method="POST">
+        <input type="email" class="input-field" placeholder="Enter Email" required>
+        <input type="password" class="input-field" placeholder="Enter Password" required>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Fitphile. All rights reserved.</p>
+    <p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
